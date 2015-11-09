@@ -28,6 +28,10 @@ Partial Class Form1
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.RectangleShape1 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
@@ -43,7 +47,7 @@ Partial Class Form1
         '
         Me.lblMessage.AutoSize = True
         Me.lblMessage.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
-        Me.lblMessage.Location = New System.Drawing.Point(290, 31)
+        Me.lblMessage.Location = New System.Drawing.Point(269, 42)
         Me.lblMessage.Name = "lblMessage"
         Me.lblMessage.Size = New System.Drawing.Size(0, 54)
         Me.lblMessage.TabIndex = 1
@@ -84,17 +88,55 @@ Partial Class Form1
         Me.TextBox1.Size = New System.Drawing.Size(200, 20)
         Me.TextBox1.TabIndex = 5
         '
+        'ShapeContainer1
+        '
+        Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
+        Me.ShapeContainer1.Name = "ShapeContainer1"
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape1})
+        Me.ShapeContainer1.Size = New System.Drawing.Size(716, 388)
+        Me.ShapeContainer1.TabIndex = 6
+        Me.ShapeContainer1.TabStop = False
+        '
+        'RectangleShape1
+        '
+        Me.RectangleShape1.Location = New System.Drawing.Point(21, 16)
+        Me.RectangleShape1.Name = "RectangleShape1"
+        Me.RectangleShape1.Size = New System.Drawing.Size(235, 364)
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(614, 311)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 7
+        Me.Button2.Text = "GiGa"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(264, 16)
+        Me.Label1.Name = "Label1"
+        Me.Label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.Label1.Size = New System.Drawing.Size(29, 13)
+        Me.Label1.TabIndex = 8
+        Me.Label1.Text = "Giga"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(716, 388)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.RadioButton2)
         Me.Controls.Add(Me.RadioButton1)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.lblMessage)
         Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.ShapeContainer1)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -107,5 +149,9 @@ Partial Class Form1
     Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
+    Friend WithEvents RectangleShape1 As Microsoft.VisualBasic.PowerPacks.RectangleShape
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 
 End Class
